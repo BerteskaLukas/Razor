@@ -10,10 +10,12 @@
             </h1>
         </div>
     </div>
+   
     @using (Html.BeginForm("NewClient", "Client", FormMethod.Post))
     {
         <div class="row">
             <div class="col-md-6">
+                @Html.ValidationSummary(false)
                 <div class="form-group">
                    @Html.LabelFor(u => u.FirstName, "First Name")
                    @Html.TextBoxFor(u => u.FirstName, new { @class= "form-control" })
