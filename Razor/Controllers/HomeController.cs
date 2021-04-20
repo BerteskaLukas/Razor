@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Razor.Models;
 
-namespace OrderingApplication.Controllers
+namespace Razor.Controllers
 {
     public class HomeController : Controller
     {

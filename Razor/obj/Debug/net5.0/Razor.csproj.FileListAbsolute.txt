@@ -357,3 +357,5 @@ C:\Users\HP\Desktop\razor\Razor\Razor\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAna
 C:\Users\HP\Desktop\razor\Razor\Razor\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Users\HP\Desktop\razor\Razor\Razor\obj\Debug\net5.0\Razor.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\HP\Desktop\razor\Razor\Razor\obj\Debug\net5.0\Razor\Views\Client\NewClient.cshtml.g.cs
+C:\Users\HP\Desktop\razor\Razor\Razor\obj\Debug\net5.0\Razor\Views\Shared\_IdeaWidget.cshtml.g.cs
+C:\Users\HP\Desktop\razor\Razor\Razor\obj\Debug\net5.0\Razor\Views\Shared\_Navigation.cshtml.g.cs
