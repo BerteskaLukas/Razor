@@ -17,20 +17,20 @@
             <div class="col-md-6">
                 @Html.ValidationSummary(false)
                 <div class="form-group">
-                   @Html.LabelFor(u => u.FirstName, "First Name")
-                   @Html.TextBoxFor(u => u.FirstName, new { @class= "form-control" })
+                    @Html.LabelFor(u => u.FirstName, "First Name")
+                    @Html.TextBoxFor(u => u.FirstName, new { @class= "form-control" })
                 </div>
                 <div class="form-group">
                     @Html.LabelFor(u => u.LastName, "Last Name")
                     @Html.TextBoxFor(u => u.LastName, new { @class= "form-control" })
                 </div>
                 <div class="form-group">
-                     @Html.LabelFor(u => u.CompanyName, "Company Name")
-                     @Html.TextBoxFor(u => u.CompanyName, new { @class= "form-control" })
+                    @Html.LabelFor(u => u.CompanyName, "Company Name")
+                    @Html.TextBoxFor(u => u.CompanyName, new { @class= "form-control" })
                 </div>
                 <div class="form-group">
-                     @Html.LabelFor(u => u.Phone, "Phone")
-                     @Html.TextBoxFor(u => u.Phone, new { @class= "form-control" })
+                    @Html.LabelFor(u => u.Phone, "Phone")
+                    @Html.TextBoxFor(u => u.Phone, new { @class= "form-control" })
                 </div>
                 <div class="form-group">
                     @Html.LabelFor(u => u.Email, "Email")
@@ -52,6 +52,9 @@
                     }
                     @Html.DropDownListFor(u => u.ClientType, clientTypes , new { @class = "form-control" })
                 </div>
+            </div>
+            <div class="col-md-4">
+                @await Component.InvokeAsync("InventoryWIdget", new { threshold = 20 })
             </div>
         </div>
         <div class="row">

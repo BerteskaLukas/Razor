@@ -30,6 +30,17 @@
      <script src="~/js/jquery-1.10.2.js"></script> 
      <script src="~/js/jquery.validate.js"></script> 
      <script src="~/js/jquery.validate.unobtrusive.js"></script> 
+     <script>
+     $(document).ready(() => {
+         $('.vote-up').click((e) => {
+             e.preventDefault();
+             let id = $(this).data('productId');
+             $.post('/home/vote', { id: id}, () => {
+                 $('#SurveyWidget').html(data);
+             })
+         })
+     })
+     </script>
 </environment>
 </body>
 </html>

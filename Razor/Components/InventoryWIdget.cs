@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
@@ -6,7 +7,7 @@ namespace Razor.Components
 {
     public class InventoryWIdget : ViewComponent
     {
-        public async Task<IViewComponentResult> InvokeAsync()
+        public async Task<IViewComponentResult> InvokeAsync(int threshold = 10)
         {
             var inventory = new List<InventoryItem>()
             {
@@ -18,18 +19,12 @@ namespace Razor.Components
                 new InventoryItem() {  Name = "Pens", Count = 16 }
             };
 
-            return View(inventory);
+            return View(inventory.Where(u => u.Count <= threshold).ToList());
         }
     }
 
     public class InventoryItem
     {
-        public InventoryItem(string name, int count)
-        {
-            Count = count;
-            Name = name;
-        }
-
         public int Count { get; set; }
         public string Name { get; set; }
     }

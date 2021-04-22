@@ -37,5 +37,10 @@ namespace Razor.Controllers
         {
             return View();
         }
+
+        public IActionResult Vote(int id)
+        {
+            return ViewComponent("SurveyWidget", new {productId = id});
+        }
     }
 }
