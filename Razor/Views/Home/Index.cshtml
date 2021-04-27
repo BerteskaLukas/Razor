@@ -41,10 +41,10 @@
                     </div>
                     </div>
                 <div class="col-md-4">
-                    <div>
+                    <div id="inventoryWidget">
                         @await Component.InvokeAsync("InventoryWIdget")    
                     </div>
-                    <div>
+                    <div id="surveyWidget">
                         @await Component.InvokeAsync("SurveyWidget")
                     </div>
                     @Html.Partial("_IdeaWidget")

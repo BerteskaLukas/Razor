@@ -31,12 +31,12 @@
      <script src="~/js/jquery.validate.js"></script> 
      <script src="~/js/jquery.validate.unobtrusive.js"></script> 
      <script>
-     $(document).ready(() => {
-         $('.vote-up').click((e) => {
+     $(document).ready(function ()  {
+         $('.vote-up').click(function (e) {
              e.preventDefault();
-             let id = $(this).data('productId');
-             $.post('/home/vote', { id: id}, () => {
-                 $('#SurveyWidget').html(data);
+             var id = $(this).data('productid');
+             $.post('/home/vote', { id: id}, function (data) {
+                 $('#surveyWidget').html(data);
              })
          })
      })
