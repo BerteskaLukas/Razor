@@ -1,8 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc.Rendering;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Razor.Services
 {
@@ -10,5 +7,6 @@ namespace Razor.Services
     {
         List<SelectListItem> GetLocations();
         List<SelectListItem> GetClientTypes();
+        List<SelectListItem> GetOrderStages();
     }
 }

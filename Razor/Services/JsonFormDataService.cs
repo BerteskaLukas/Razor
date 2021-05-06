@@ -26,6 +26,11 @@ namespace Razor.Services
             {
                 return _srcJson.Locations.Select(x => new SelectListItem() { Text = x }).ToList();
             }
+
+            public List<SelectListItem> GetOrderStages()
+            {
+                throw new NotImplementedException();
+            }
         }
 
         public class DropDownData

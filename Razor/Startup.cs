@@ -28,7 +28,7 @@ namespace Razor
             services.AddRazorPages().AddRazorRuntimeCompilation();
             services.AddScoped<IInventoryService, InventoryService>();
             services.AddSingleton<ISurveyService, SurveyService>();
-            services.AddSingleton<IFormDataService, JsonFormDataService>();
+            services.AddSingleton<IFormDataService, FormDataService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

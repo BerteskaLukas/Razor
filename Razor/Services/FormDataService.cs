@@ -1,8 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc.Rendering;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Razor.Services
 {
@@ -26,6 +23,20 @@ namespace Razor.Services
                 new SelectListItem() {Text = "Small Bussiness"},
                 new SelectListItem() {Text = "Individual"},
                 new SelectListItem() {Text = "Corporation"}
+            };
+        }
+
+        public List<SelectListItem> GetOrderStages()
+        {
+            return new List<SelectListItem>()
+            {
+                new SelectListItem() { Text = "Intake" },
+                new SelectListItem() { Text = "Inventory Fulfillment" },
+                new SelectListItem() { Text = "Billing" },
+                new SelectListItem() { Text = "Prep for Shipping" },
+                new SelectListItem() { Text = "Shipped" },
+                new SelectListItem() { Text = "Delivery Confirmation" },
+                new SelectListItem() { Text = "On Hold" }
             };
         }
     }

@@ -364,3 +364,4 @@ C:\Users\HP\Desktop\razor\Razor\Razor\obj\Debug\net5.0\Razor\Views\Shared\Compon
 C:\Users\HP\Desktop\razor\Razor\Razor\obj\Debug\net5.0\Razor\Views\Shared\Components\SurveyWidget\Results.cshtml.g.cs
 C:\Users\HP\Desktop\razor\Razor\Razor\bin\Debug\net5.0\FormData.json
 C:\Users\HP\Desktop\razor\Razor\Razor\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\HP\Desktop\razor\Razor\Razor\obj\Debug\net5.0\Razor\Views\Order\NewOrder.cshtml.g.cs
